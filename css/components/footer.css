@@ -1,0 +1,193 @@
+/* =============================================================
+   ENHANCED FOOTER (Fully Responsive + Custom Mobile Layout)
+   ============================================================= */
+
+.main-footer {
+    background-color: #fff;
+    color: #1a1a1a;
+    padding: 80px 0 0 0;
+    border-top: 1px solid #eee;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 5% 60px 5%;
+    display: grid;
+    /* Desktop: 4 columns */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px;
+}
+
+/* Typography & Logo */
+.footer-logo {
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-col h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+/* Lists & Links */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #1a1a1a;
+    transition: width 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #1a1a1a;
+}
+
+.footer-col ul li a:hover::after {
+    width: 100%;
+}
+
+/* Social Links */
+.footer-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-item {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid #f4f4f4;
+    padding: 30px 5%;
+}
+
+.bottom-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.legal-links a {
+    text-decoration: none;
+    color: #999;
+    font-size: 0.75rem;
+    margin-left: 20px;
+}
+
+/* =============================================================
+   RESPONSIVE LOGIC
+   ============================================================= */
+
+@media (max-width: 768px) {
+    .footer-container {
+        /* Define a custom grid layout for mobile */
+        grid-template-areas: 
+            "brand brand"
+            "social social"
+            "shop support";
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
+
+    /* Assign columns to grid areas */
+    .brand-col { 
+        grid-area: brand; 
+    }
+    
+    /* We target the 4th column specifically for socials */
+    .footer-container > div:nth-child(4) { 
+        grid-area: social; 
+    }
+
+    /* We target 2nd and 3rd columns for Shop/Support */
+    .footer-container > div:nth-child(2) { 
+        grid-area: shop; 
+    }
+    .footer-container > div:nth-child(3) { 
+        grid-area: support; 
+    }
+
+    /* Mobile Social Styling: Horizontal row */
+    .footer-social-links {
+        flex-direction: row;
+        gap: 20px;
+        margin-top: -10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee; /* Visual separator */
+    }
+
+    .bottom-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .legal-links a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-footer {
+        padding-top: 50px;
+    }
+    
+    .footer-logo {
+        font-size: 1.3rem;
+    }
+    
+    .footer-col p {
+        font-size: 0.85rem;
+    }
+}

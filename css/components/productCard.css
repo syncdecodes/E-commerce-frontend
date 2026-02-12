@@ -1,0 +1,115 @@
+/* =============================================================
+   PRODUCT CARD – GLOBAL & REUSABLE
+   ============================================================= */
+
+.product-card {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  animation: fadeUp 0.5s ease both;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= IMAGE ================= */
+
+.product-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background-color: #f5f5f5;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-card-image {
+  transform: scale(1.04);
+}
+
+/* ================= INFO ================= */
+
+.product-card-info {
+  padding: 1.6rem;
+}
+
+.product-card-name {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+.product-card-price {
+  font-size: 16px;
+  color: #666;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============================================================
+   RESPONSIVE
+   ============================================================= */
+
+/* Tablets */
+@media (max-width: 1100px) {
+  .product-card-name {
+    font-size: 14px;
+    height: 2.5em;
+    overflow: hidden;
+  }
+
+  .product-card-price {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .product-card-info {
+    padding: 1.2rem;
+  }
+
+  .product-card-name {
+    font-size: 14px;
+  }
+
+  .product-card-price {
+    font-size: 14px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .product-card-info {
+    padding: 0.8rem;
+  }
+
+  .product-card-name {
+    font-size: 10px;
+  }
+
+  .product-card-price {
+    font-size: 10px;
+  }
+}

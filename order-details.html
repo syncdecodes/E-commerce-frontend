@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Details</title>
+
+  <!-- Global css and toast -->
+  <link rel="stylesheet" href="./css/shared/sharedCss.css">
+  <link rel="stylesheet" href="./css/components/toast.css">
+
+  <!-- navbar and footer -->
+  <link rel="stylesheet" href="./css/components/navbar.css">
+  <link rel="stylesheet" href="./css/components/footer.css">
+
+  <!-- page specific css -->
+  <link rel="stylesheet" href="./css/pages/order-details.css" />
+
+</head>
+
+<body>
+
+
+  <header id="navbar"></header>
+
+  <section class="order-details">
+
+    <!-- Order Header -->
+    <!-- <div class="order-header">
+      <div>
+        <h2>Order #ORD12345</h2>
+        <p class="order-date">Delivered on 12 Jan 2026</p>
+      </div>
+      <span class="order-status delivered">Delivered</span>
+    </div> -->
+
+    <!-- Order Timeline -->
+    <!-- <div class="order-timeline">
+      <div class="timeline-step completed">Placed</div>
+      <div class="timeline-step completed">Shipped</div>
+      <div class="timeline-step completed">Delivered</div>
+    </div> -->
+
+    <!-- Items -->
+    <!-- <div class="order-items">
+      <h3>Items</h3>
+
+      <div class="order-item">
+        <img src="https://offduty.in/cdn/shop/files/IMG_4573_2_1080x.jpg?v=1767876607" />
+        <div class="item-info">
+          <p class="item-name">Wireless Headphones</p>
+
+          <p class="item-size">Size: <span>32</span></p>
+
+          <p class="item-qty">Qty: 2</p>
+        </div>
+        <p class="item-price">₹998</p>
+      </div>
+
+      <div class="order-item">
+        <img src="https://offduty.in/cdn/shop/files/IMG_4573_2_1080x.jpg?v=1767876607" />
+        <div class="item-info">
+          <p class="item-name">Bluetooth Speaker</p>
+          <p class="item-qty">Qty: 1</p>
+        </div>
+        <p class="item-price">₹499</p>
+      </div>
+    </div> -->
+
+    <!-- Delivery Address -->
+    <!-- <div class="order-address">
+      <h3>Delivery Address</h3>
+      <p><strong>Customer Name</strong></p>
+      <p>8588949227</p>
+      <p>Anand Parbat, Kundan Restaurant</p>
+      <p>New Delhi, Delhi - 110005</p>
+    </div> -->
+
+    <!-- Order Summary -->
+    <!-- <div class="order-summary">
+      <h3>Order Summary</h3>
+
+      <div class="summary-row">
+        <span>Payment Method</span>
+        <span>Cash on Delivery</span>
+      </div>
+
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span>₹1497</span>
+      </div>
+
+      <div class="summary-row">
+        <span>Delivery</span>
+        <span class="free">FREE</span>
+      </div>
+
+      <div class="summary-row total">
+        <span>Total</span>
+        <span>₹1497</span>
+      </div>
+    </div> -->
+
+  </section>
+
+  <div id="confirm-modal" class="modal-overlay">
+    <div class="modal-content">
+      <h3>Cancel Order</h3>
+      <p>Are you sure you want to cancel this entire order? This action cannot be undone.</p>
+      <div class="modal-actions">
+        <button id="modal-cancel" class="btn-secondary">No, Keep Order</button>
+        <button id="modal-confirm" class="btn-danger">Yes, Cancel Order</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+  <script type="module" src="./js/pages/order-details.js"></script>
+</body>
+
+</html>

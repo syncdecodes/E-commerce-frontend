@@ -1,0 +1,165 @@
+/* ================= PAGE LAYOUT ================= */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #111;
+}
+
+/* ================= AUTH CARD ================= */
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* ================= HEADINGS ================= */
+.auth-container h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.auth-container p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* ================= INPUTS ================= */
+.auth-container input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* ================= BUTTONS ================= */
+.auth-container button {
+  width: 100%;
+  padding: 14px;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.auth-container button:hover {
+  background: #222;
+}
+
+/* ================= LINKS ================= */
+.auth-links {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.auth-links a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+/* ================= SMALL TEXT ================= */
+.helper-text {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 24px;
+  }
+
+  .auth-container {
+    max-width: 380px;
+    padding: 32px;
+  }
+
+  .auth-container h1 {
+    font-size: 24px;
+  }
+
+  .auth-container p {
+    font-size: 13px;
+    margin-bottom: 22px;
+  }
+
+  .auth-container input {
+    padding: 13px;
+    font-size: 13px;
+  }
+
+  .auth-container button {
+    padding: 13px;
+    font-size: 13px;
+  }
+
+  .auth-links,
+  .helper-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+    align-items: flex-start; /* prevents keyboard overlap feel */
+  }
+
+  .auth-container {
+    max-width: 100%;
+    padding: 24px;
+    border-radius: 6px;
+  }
+
+  .auth-container h1 {
+    font-size: 22px;
+  }
+
+  .auth-container p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .auth-container input {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .auth-container button {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .auth-links {
+    font-size: 13px;
+  }
+
+  .helper-text {
+    font-size: 12px;
+  }
+}

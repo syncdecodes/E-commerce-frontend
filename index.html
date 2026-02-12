@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DVL | Premium Jeans</title>
+
+  <!-- product card and grid -->
+  <link rel="stylesheet" href="./css/components/productCard.css">
+  <link rel="stylesheet" href="./css/components/productGrid.css">
+
+  <!-- Global css and toast -->
+  <link rel="stylesheet" href="./css/shared/sharedCss.css">
+  <link rel="stylesheet" href="./css/components/toast.css">
+
+  <!-- navbar and footer -->
+  <link rel="stylesheet" href="./css/components/navbar.css">
+  <link rel="stylesheet" href="./css/components/footer.css">
+
+  <!-- page specific css -->
+  <link rel="stylesheet" href="./css/pages/index.css">
+
+</head>
+
+<body>
+
+  <header id="navbar"></header>
+  <div id="toast-container"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Premium Denim Collection</h1>
+    <p>Designed for comfort. Built for style.</p>
+  </section>
+
+  <!-- Products -->
+  <main class="container">
+
+    <section class="filters">
+      <select id="category-filter">
+        <option value="" class="select-filter">All Categories</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+      </select>
+
+      <select id="color-filter">
+        <option value="" class="select-filter">All Colors</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+        <option value="grey">Grey</option>
+      </select>
+
+      <select id="price-filter">
+        <option value="" class="select-filter">Sort by Price</option>
+        <option value="low">Low → High</option>
+        <option value="high">High → Low</option>
+      </select>
+
+      <button class="clear-filters">Clear Filters</button>
+    </section>
+
+
+    <h2 class="section-title">Our Products</h2>
+
+    <div id="product-cards-container" class="products-grid">
+      <!-- product card will be rendered here via js -->
+    </div>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="./js/pages/index.js"></script>
+</body>
+
+</html>

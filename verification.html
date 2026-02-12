@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verification page</title>
+
+  <!-- Global css and toast -->
+  <link rel="stylesheet" href="./css/shared/sharedCss.css">
+  <link rel="stylesheet" href="./css/components/toast.css">
+
+  <!-- page specific css -->
+  <link rel="stylesheet" href="./css/pages/auth.css">
+
+</head>
+
+<body>
+  <div class="auth-container">
+    <h1>Verify OTP</h1>
+    <p>Enter the OTP sent to your email</p>
+
+    <input id="otp" type="text" placeholder="Enter OTP">
+    <button class="verify-btn">Verify</button>
+
+    <p class="helper-text">Didn’t receive OTP? Check spam.</p>
+  </div>
+
+  <script type="module" src="./js/pages/verification.js"></script>
+</body>
+
+</html>

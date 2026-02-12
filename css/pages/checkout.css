@@ -1,0 +1,228 @@
+/* =============================================================
+   CHECKOUT PAGE (Minimalist & Consistent with Index.css)
+   ============================================================= */
+
+.checkout-container {
+  max-width: 800px; /* Slightly wider for a professional feel */
+  margin: 60px auto;
+  padding: 0 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.checkout-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  text-align: left;
+}
+
+.checkout-card {
+  background: #fff;
+  border: 1px solid #eee; /* Sharp border instead of shadow for minimalism */
+  border-radius: 0px; /* Matches the sharp edges of product cards */
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/* Section Headers */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 10px;
+}
+
+.section-header h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Links & Actions */
+.change-link {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #666; /* Muted color for secondary actions */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.change-link:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+.address-details p {
+  margin: 6px 0;
+  color: #444;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Order Summary */
+.summary-section h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #666;
+  font-weight: 300;
+}
+
+.summary-row.total {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  border-top: 2px solid #1a1a1a; /* Stronger visual break for the total */
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+/* Specialized Text */
+.free {
+  color: #1a1a1a; /* Keeps it monochromatic/high-end */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+/* Place Order Button - Matching index.css button style */
+.place-order-btn {
+  width: 100%;
+  padding: 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 0px; /* Sharp edges */
+  background: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.place-order-btn:hover {
+  background: #444;
+}
+
+
+@media (max-width: 768px) {
+  .checkout-container {
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 0 4%;
+  }
+
+  .checkout-title {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .checkout-card {
+    padding: 22px;
+    margin-bottom: 24px;
+  }
+
+  .section-header h2,
+  .summary-section h2 {
+    font-size: 1.05rem;
+  }
+
+  .change-link {
+    font-size: 0.8rem;
+  }
+
+  .address-details p {
+    font-size: 0.9rem;
+  }
+
+  .summary-row {
+    font-size: 0.95rem;
+  }
+
+  .summary-row.total {
+    font-size: 1.1rem;
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+
+  .place-order-btn {
+    padding: 16px;
+    font-size: 0.85rem;
+    letter-spacing: 1.8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-container {
+    max-width: 100%;
+    margin: 30px 1rem;
+    padding: 0;
+  }
+
+  .checkout-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .checkout-card {
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+
+  .section-header {
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+  }
+
+  .section-header h2,
+  .summary-section h2 {
+    font-size: 0.95rem;
+    letter-spacing: 0.8px;
+  }
+
+  .change-link {
+    font-size: 0.75rem;
+  }
+
+  .address-details p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .summary-row {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+
+  .summary-row.total {
+    font-size: 1.05rem;
+  }
+
+  .free {
+    font-size: 0.75rem;
+  }
+
+  .place-order-btn {
+    padding: 14px;
+    font-size: 0.75rem;
+    letter-spacing: 1.4px;
+  }
+}

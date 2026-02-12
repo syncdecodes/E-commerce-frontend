@@ -1,0 +1,124 @@
+/* =============================================================
+   POLICY PAGE – DVL MINIMALIST STYLE
+   ============================================================= */
+
+.policy-page {
+    max-width: 800px;
+    /* Narrower width for better reading experience */
+    margin: 60px auto;
+    padding: 0 5%;
+    font-family: "Poppins", sans-serif;
+    color: #1a1a1a;
+    background-color: #fff;
+}
+
+/* --- Header Section --- */
+.policy-page h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+/* --- Content Sections --- */
+.policy-section {
+    margin-bottom: 48px;
+    animation: fadeUp 0.6s ease both;
+    /* Adding that subtle brand fade */
+}
+
+.policy-section h2 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Visual line next to heading for brand flair */
+.policy-section h2::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background-color: #eee;
+}
+
+.policy-section p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #555;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+/* --- Lists --- */
+.policy-section ul {
+    list-style: none;
+    /* Removing default dots for a cleaner look */
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.policy-section ul li {
+    font-size: 0.95rem;
+    color: #555;
+    font-weight: 300;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Minimalist custom bullet (small dash) */
+.policy-section ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #999;
+}
+
+/* ================= RESPONSIVE LOGIC ================= */
+
+/* Tablet & Smaller Devices (≤ 768px) */
+@media (max-width: 768px) {
+    .policy-page {
+        margin: 40px auto;
+    }
+
+    .policy-page h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .policy-section {
+        margin-bottom: 35px;
+    }
+}
+
+/* Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+    .policy-page {
+        margin: 20px auto;
+    }
+
+    .policy-page h1 {
+        font-size: 1.7rem;
+        text-align: left;
+        /* Aligned with your mobile contact page style */
+    }
+
+    .policy-section h2 {
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+    }
+
+    .policy-section p,
+    .policy-section ul li {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+}

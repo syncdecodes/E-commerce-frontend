@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipping & Returns | DVL</title>
+
+  <link rel="stylesheet" href="./css/components/footer.css">
+  <link rel="stylesheet" href="./css/components/navbar.css">
+
+  <link rel="stylesheet" href="./css/shared/sharedCss.css">
+  
+  <link rel="stylesheet" href="./css/pages/shipping-returns.css" />
+</head>
+
+<body>
+
+  <!-- Navbar injected via JS -->
+   <div id="navbar"></div>
+
+  <main class="policy-page">
+
+    <h1>Shipping & Returns</h1>
+
+    <section class="policy-section">
+      <h2>Shipping Policy</h2>
+      <p>
+        We currently ship only in Delhi and Noida. Orders are usually processed within
+        <strong>1–2 business days</strong> after confirmation.
+      </p>
+      <p>
+        Delivery typically takes <strong>3–7 business days</strong> depending on
+        your location and courier partner.
+      </p>
+      <p>
+        Once your order is shipped, you will receive tracking details via WhatsApp or email.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>Delivery Charges</h2>
+      <p>
+        We offer <strong>FREE shipping</strong> on all prepaid orders.
+      </p>
+      <p>
+        Cash on Delivery (COD), if available, may include an additional charge.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>Returns & Exchanges</h2>
+      <p>
+        We accept returns or exchanges only in case of:
+      </p>
+      <ul>
+        <li>Damaged product</li>
+        <li>Incorrect item delivered</li>
+        <li>Manufacturing defects</li>
+      </ul>
+      <p>
+        To be eligible, you must contact us within <strong>48 hours</strong> of delivery.
+      </p>
+      <p>
+        Products must be unused, unwashed, and in original packaging.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>How to Request a Return</h2>
+      <p>
+        Please contact us on WhatsApp or Instagram with:
+      </p>
+      <ul>
+        <li>Your Order ID</li>
+        <li>Images or video of the issue</li>
+      </ul>
+      <p>
+        Our team will guide you through the next steps.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>Refunds</h2>
+      <p>
+        Once the return is approved and inspected, refunds (if applicable)
+        will be processed within <strong>5–7 business days</strong>.
+      </p>
+      <p>
+        Refunds are issued to the original payment method.
+      </p>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module">
+    import { renderNavbar } from "./js/components/navbar.js";
+    import { renderFooter } from "./js/components/footer.js";
+
+    renderNavbar();
+    renderFooter();
+  </script>
+
+</body>
+</html>

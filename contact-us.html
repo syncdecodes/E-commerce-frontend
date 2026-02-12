@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | DVL</title>
+
+    <link rel="stylesheet" href="./css/components/footer.css">
+    <link rel="stylesheet" href="./css/components/navbar.css">
+
+    <link rel="stylesheet" href="./css/shared/sharedCss.css">
+    <link rel="stylesheet" href="./css/pages/contact-us.css" />
+
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main class="contact-page">
+
+        <section class="contact-header">
+            <h1>Need Help?</h1>
+            <p>Reach out to us directly. We usually respond within a few hours.</p>
+        </section>
+
+        <section class="contact-options">
+
+            <a href="https://wa.me/9953060636?text=Hi%20DVL%20Team,%20I%20need%20help%20with%20my%20order"
+                target="_blank" class="contact-card whatsapp">
+                <h2>WhatsApp</h2>
+                <p>Chat with our support team</p>
+                <span>+91 9953060636</span>
+            </a>
+
+            <a href="https://instagram.com/devoided_dev" target="_blank" class="contact-card instagram">
+                <h2>Instagram</h2>
+                <p>DM us on Instagram</p>
+                <span>@dvl</span>
+            </a>
+
+            <a href="mailto:devshraff45@gmail.com
+                    ?subject=Support%20Request
+                    &body=Hi%20DVL%20Team,%0A%0AI%20need%20help%20with..." class="contact-card email">
+                <h2>Email</h2>
+                <p>For formal queries</p>
+                <span>support@dvljeans.com</span>
+            </a>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script type="module">
+        import { renderNavbar } from "./js/components/navbar.js";
+        import { renderFooter } from "./js/components/footer.js";
+
+        renderNavbar();
+        renderFooter();
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- Character  Encoded
+Space       %20
+New        line%0A
+?          %3F
+&            %26
+=            %3D -->

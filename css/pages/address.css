@@ -1,0 +1,166 @@
+/* Address Form - Matches Minimalist Index Aesthetic */
+.address-form {
+  max-width: 500px; /* Slightly wider for a premium feel */
+  margin: 6rem auto;
+  padding: 3rem;
+  background: #fff;
+  border: 1px solid #eee; /* Removed heavy shadow for a clean border */
+  border-radius: 0px; /* Sharp edges to match .product-card */
+}
+
+.address-form h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: left; /* Changed from center to match .section-title */
+  letter-spacing: -1px;
+  position: relative;
+}
+
+/* Matching the underline effect from .section-title */
+.address-form h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #1a1a1a;
+  margin-top: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  font-size: 0.9rem;
+  border-radius: 0px; /* Sharp edges */
+  border: 1px solid #ccc;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #1a1a1a; /* Changed from blue to black */
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+/* Button - Matches .product-info button */
+.address-form button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 14px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 0px; /* Sharp edges */
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.address-form button:hover {
+  background-color: #444;
+}
+
+
+
+@media (max-width: 768px) {
+  .address-form {
+    max-width: 420px;
+    margin: 4rem auto;
+    padding: 2.2rem;
+  }
+
+  .address-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .address-form h2::after {
+    width: 32px;
+    height: 2px;
+  }
+
+  .form-group label {
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .form-row {
+    gap: 12px;
+  }
+
+  .address-form button {
+    padding: 12px;
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .address-form {
+    max-width: 100%;
+    margin: 3rem 1rem;
+    padding: 1.6rem;
+  }
+
+  .address-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .address-form h2::after {
+    width: 28px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+
+  .form-group label {
+    font-size: 0.75rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 9px;
+    font-size: 0.8rem;
+  }
+
+  .address-form button {
+    padding: 12px;
+    font-size: 0.75rem;
+    letter-spacing: 1.2px;
+  }
+}
