@@ -100,7 +100,8 @@ const handleAfterLogin = async () => {
 
         try {
             await addToCart(pendingProductId, Number(pendingQty) || 1)
-            showToast("Item added to cart")
+            updateCartCount()
+            showToast("Item added to cart", "cart")
         }
         catch (error) {
             console.log(error.message, "error")
